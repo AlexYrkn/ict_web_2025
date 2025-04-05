@@ -12,7 +12,7 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U support -d support"]
+      test: ["CMD-SHELL", "pg_isready -U warrior -d warriors_db"]
       interval: 10s
       timeout: 5s
       retries: 5
