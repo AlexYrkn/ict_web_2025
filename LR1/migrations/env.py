@@ -6,6 +6,10 @@ from sqlalchemy import pool
 from alembic import context
 
 from models.user_model import *
+from models.trip_model import *
+from models.trip_participant_model import *
+from models.message_model import *
+from models.review_model import *
 import os
 from dotenv import load_dotenv
 

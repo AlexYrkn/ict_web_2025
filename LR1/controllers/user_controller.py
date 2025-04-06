@@ -3,13 +3,7 @@ from sqlmodel import select
 from typing import List
 from datetime import timedelta
 
-from util.auth import (
-    hash_password,
-    verify_password,
-    create_access_token,
-    get_current_user,
-    ACCESS_TOKEN_EXPIRE_MINUTES,
-)
+from util.auth import hash_password, verify_password, create_access_token, get_current_user, ACCESS_TOKEN_EXPIRE_MINUTES
 from connection import get_session
 from models.user_model import User, UserCreate, UserLogin, UserRead, UserUpdatePassword
 
@@ -21,7 +15,13 @@ def register(user: UserCreate, session=Depends(get_session)):
     if existing_user:
         raise HTTPException(status_code=400, detail="Username already registered")
     hashed = hash_password(user.password)
-    new_user = User(username=user.username, hashed_password=hashed)
+    new_user = User(
+        username=user.username,
+        hashed_password=hashed,
+        bio=user.bio,
+        experience=user.experience,
+        preferences=user.preferences,
+    )
     session.add(new_user)
     session.commit()
     session.refresh(new_user)
@@ -34,9 +34,10 @@ def login(user: UserLogin, session=Depends(get_session)):
         raise HTTPException(status_code=400, detail="Invalid username or password")
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": str(db_user.id)}, expires_delta=access_token_expires
+        data={"sub": str(db_user.id)},
+        expires_delta=access_token_expires
     )
-    return {"id":db_user.id, "access_token": access_token}
+    return {"id": db_user.id, "access_token": access_token}
 
 @router.get("/me", response_model=UserRead)
 def read_users_me(current_user: User = Depends(get_current_user)):
