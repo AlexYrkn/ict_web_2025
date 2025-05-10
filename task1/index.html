@@ -6,27 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Документация проекта для поиска попутчиков с описанием всех реализованных эндпоинтов, моделей и кода подключения к БД.">
-      
-      
-        <meta name="author" content="Юркин Александр">
       
       
       
-        <link rel="prev" href="../endpoints/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../task2/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
     
     
       
-        <title>Models - Travel Partner Finder API Documentation</title>
+        <title>Task 1 - Web Multithreading lab work</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#n5000000000" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Travel Partner Finder API Documentation" class="md-header__button md-logo" aria-label="Travel Partner Finder API Documentation" data-md-component="logo">
+    <a href=".." title="Web Multithreading lab work" class="md-header__button md-logo" aria-label="Web Multithreading lab work" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,13 +92,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Travel Partner Finder API Documentation
+            Web Multithreading lab work
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Models
+              Task 1
             
           </span>
         </div>
@@ -178,13 +176,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Travel Partner Finder API Documentation" class="md-nav__button md-logo" aria-label="Travel Partner Finder API Documentation" data-md-component="logo">
+    <a href=".." title="Web Multithreading lab work" class="md-nav__button md-logo" aria-label="Web Multithreading lab work" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Travel Partner Finder API Documentation
+    Web Multithreading lab work
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -215,28 +213,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../endpoints/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Endpoints
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -249,95 +225,40 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Models
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Models
+    Task 1
     
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пользователь (User)
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#trip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Поездка (Trip)
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tripparticipant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ассоциативная сущность – участники поездки (TripParticipant)
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#review" class="md-nav__link">
-    <span class="md-ellipsis">
-      Отзыв (Review)
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message" class="md-nav__link">
-    <span class="md-ellipsis">
-      Сообщение (Message)
-    </span>
-  </a>
   
-</li>
-      
-    </ul>
+    <li class="md-nav__item">
+      <a href="../task2/" class="md-nav__link">
+        
   
-</nav>
-      
+  
+  <span class="md-ellipsis">
+    Task 2
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -362,59 +283,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пользователь (User)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#trip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Поездка (Trip)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tripparticipant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ассоциативная сущность – участники поездки (TripParticipant)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#review" class="md-nav__link">
-    <span class="md-ellipsis">
-      Отзыв (Review)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message" class="md-nav__link">
-    <span class="md-ellipsis">
-      Сообщение (Message)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -429,74 +297,117 @@
 
 
 
-<h1 id="_1">Модели</h1>
-<p>В данном разделе описаны модели, используемые в проекте.</p>
-<h2 id="user">Пользователь (User)</h2>
-<pre><code class="language-python">class User(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    username: str = Field(index=True, unique=True)
-    hashed_password: str
-    bio: Optional[str] = None
-    experience: Optional[str] = None
-    preferences: Optional[str] = None
+<h1 id="n5000000000">Результаты при <code>N=5000000000</code></h1>
+<ol>
+<li>Threading</li>
+</ol>
+<pre><code class="language-python">import threading
+import time
 
-    trips_created: List[Trip] = Relationship(back_populates=&quot;creator&quot;)
-    trips_joined: List[Trip] = Relationship(back_populates=&quot;participants&quot;, link_model=TripParticipant)
-    reviews: List[Review] = Relationship(back_populates=&quot;user&quot;)
-    messages: List[Message] = Relationship(back_populates=&quot;user&quot;)
-</code></pre>
-<h2 id="trip">Поездка (Trip)</h2>
-<pre><code class="language-python">class TripDefault(SQLModel):
-    title: str
-    departure: str
-    destination: str
-    start_date: date
-    end_date: date
-    description: Optional[str] = None
+def calculate_sum(start, end):
+    return sum(range(start, end + 1))
 
-class Trip(TripDefault, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    creator_id: int = Field(foreign_key=&quot;user.id&quot;)
-    creator: Optional[User] = Relationship(back_populates=&quot;trips_created&quot;)
-    participants: List[User] = Relationship(back_populates=&quot;trips_joined&quot;, link_model=TripParticipant)
-    reviews: List[Review] = Relationship(back_populates=&quot;trip&quot;)
-    messages: List[Message] = Relationship(back_populates=&quot;trip&quot;)
-</code></pre>
-<h2 id="tripparticipant">Ассоциативная сущность – участники поездки (TripParticipant)</h2>
-<pre><code class="language-python">class TripParticipant(SQLModel, table=True):
-    trip_id: Optional[int] = Field(default=None, foreign_key=&quot;trip.id&quot;, primary_key=True)
-    user_id: Optional[int] = Field(default=None, foreign_key=&quot;user.id&quot;, primary_key=True)
-    status: str = Field(default=&quot;pending&quot;)
-    joined_at: datetime = Field(default_factory=datetime.utcnow)
-</code></pre>
-<h2 id="review">Отзыв (Review)</h2>
-<pre><code class="language-python">class Review(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    trip_id: int = Field(foreign_key=&quot;trip.id&quot;)
-    user_id: int = Field(foreign_key=&quot;user.id&quot;)
-    rating: int
-    comment: Optional[str] = None
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-</code></pre>
-<h2 id="message">Сообщение (Message)</h2>
-<pre><code class="language-python">class MessageDefault(SQLModel):
-    content: str
+def worker(start, end, results, index):
+    results[index] = calculate_sum(start, end)
 
-class Message(MessageDefault, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    trip_id: int = Field(foreign_key=&quot;trip.id&quot;)
-    user_id: int = Field(foreign_key=&quot;user.id&quot;)
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+if __name__ == '__main__':
+    N = 5000000000
+    num_threads = 4
+    chunk_size = N // num_threads
+    threads = []
+    results = [0] * num_threads
 
-    trip: Optional[&quot;Trip&quot;] = Relationship(back_populates=&quot;messages&quot;)
-    user: Optional[&quot;User&quot;] = Relationship(back_populates=&quot;messages&quot;)
+    start_time = time.time()
+    for i in range(num_threads):
+        start = i * chunk_size + 1
+        end = (i + 1) * chunk_size if i &lt; num_threads - 1 else N
+        t = threading.Thread(target=worker, args=(start, end, results, i))
+        threads.append(t)
+        t.start()
 
-class MessageDetails(MessageDefault):
-    id: int
-    created_at: datetime
-    trip: Optional[&quot;Trip&quot;] = None
-    user: Optional[&quot;User&quot;] = None
+    for t in threads:
+        t.join()
+
+    total = sum(results)
+    end_time = time.time()
+
+    print(f&quot;Threading Total: {total}&quot;)
+    print(f&quot;Threading Time: {end_time - start_time:.2f} seconds&quot;)
 </code></pre>
+<pre><code class="language-python">Threading Total: 12500000002500000000
+Threading Time: 51.58 seconds
+</code></pre>
+<ol>
+<li>Multiprocessing</li>
+</ol>
+<pre><code class="language-python">import multiprocessing
+import time
+
+def calculate_sum(start, end):
+    return sum(range(start, end + 1))
+
+if __name__ == '__main__':
+    N = 5000000000
+    num_processes = 4
+    chunk_size = N // num_processes
+    ranges = []
+    for i in range(num_processes):
+        start = i * chunk_size + 1
+        end = (i + 1) * chunk_size if i &lt; num_processes - 1 else N
+        ranges.append((start, end))
+
+    start_time = time.time()
+    with multiprocessing.Pool(processes=num_processes) as pool:
+        results = pool.starmap(calculate_sum, ranges)
+
+    total = sum(results)
+    end_time = time.time()
+
+    print(f&quot;Multiprocessing Total: {total}&quot;)
+    print(f&quot;Multiprocessing Time: {end_time - start_time:.2f} seconds&quot;)
+</code></pre>
+<pre><code class="language-python">Multiprocessing Total: 12500000002500000000
+Multiprocessing Time: 14.10 seconds
+</code></pre>
+<ol>
+<li>Async</li>
+</ol>
+<pre><code class="language-python">import asyncio
+import time
+
+def calculate_sum(start, end):
+    return sum(range(start, end + 1))
+
+async def main():
+    N = 5000000000
+    num_tasks = 4
+    chunk_size = N // num_tasks
+    ranges = []
+    for i in range(num_tasks):
+        start = i * chunk_size + 1
+        end = (i + 1) * chunk_size if i &lt; num_tasks - 1 else N
+        ranges.append((start, end))
+
+    loop = asyncio.get_running_loop()
+    start_time = time.time()
+
+    tasks = [loop.run_in_executor(None, calculate_sum, s, e) for s, e in ranges]
+    results = await asyncio.gather(*tasks)
+
+    total = sum(results)
+    end_time = time.time()
+
+    print(f&quot;Async Total: {total}&quot;)
+    print(f&quot;Async Time: {end_time - start_time:.2f} seconds&quot;)
+
+if __name__ == '__main__':
+    asyncio.run(main())
+</code></pre>
+<pre><code class="language-python">Async Total: 12500000002500000000
+Async Time: 50.39 seconds
+</code></pre>
+<h1 id="_1">Вывод:</h1>
+<p>Наиболее эффективным для ЦПУ задач является мультипроцессинг.</p>
 
 
 
@@ -545,10 +456,10 @@ class MessageDetails(MessageDefault):
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
