@@ -50,4 +50,4 @@ def parse_and_save(url):
     save(country, hotels)
 
 
-parse_and_save("https://sletat.ru/tours/turkey/")
+# parse_and_save("https://sletat.ru/tours/turkey/")
